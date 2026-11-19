@@ -2,12 +2,14 @@ package com.dt2.gtavi.controller;
 
 import com.dt2.gtavi.entities.Personagem;
 import com.dt2.gtavi.repository.PersonagemRepository;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("api/personagens")
+@Tag(name = "Personagens", description = "Gerenciamento dos personagens da trama")
 public class PersonagemController {
 
     private final PersonagemRepository repository;

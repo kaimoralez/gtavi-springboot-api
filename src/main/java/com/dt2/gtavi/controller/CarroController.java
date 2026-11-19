@@ -2,11 +2,12 @@ package com.dt2.gtavi.controller;
 
 import com.dt2.gtavi.entities.Carro;
 import com.dt2.gtavi.repository.CarroRepository;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
+@Tag(name = "Veículos", description = "Gerenciamento de carros e veículos")
 @RestController
 @RequestMapping("api/veiculos")
 public class CarroController {

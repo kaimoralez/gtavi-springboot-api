@@ -2,10 +2,12 @@ package com.dt2.gtavi.controller;
 
 import com.dt2.gtavi.entities.Arma;
 import com.dt2.gtavi.repository.ArmaRepository;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Armas", description = "Gerenciamento do arsenal e armamentos")
 @RestController
 @RequestMapping("api/armas")
 public class ArmaController {
